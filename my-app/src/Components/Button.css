@@ -1,0 +1,21 @@
+:root {
+    --primary: #fff;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: 10px solid red;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: var(--primary);
+    color: #242424;
+    border: 10px solid red;
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    font-size:x-large;
+    height: 50%
+}
