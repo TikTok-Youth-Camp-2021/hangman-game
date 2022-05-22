@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 import { Button } from './Components/Button';
-import { ToggleButton } from './Components/ToggleButton';
 
 
 function clickMe(){
@@ -15,7 +14,7 @@ function changeText() {
 
 function App() {
 
-  const [buttonText, setButtonText] = useState("Music: On");
+  
 
   return (
     <div className="App">
@@ -32,7 +31,7 @@ function App() {
         </div>
 
         <div className='MenuButton'>
-          <ToggleButton>Music: On</ToggleButton>
+          <Button>Music: On</Button>
         </div>
 
         <div className='MenuButton'>
