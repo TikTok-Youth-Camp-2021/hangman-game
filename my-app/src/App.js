@@ -1,19 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from './Components/Button';
+import { MusicButton } from './Components/MusicButton';
+import song from "./static/Makai Symphony - Dragon Castle.mp3";
 
 
 function clickMe(){
   alert('You Clicked Me!')
 }
 
-function changeText() {
-  alert('You Clicked Me!')
-}
-
 function App() {
 
+  const Song = new Audio(song)
   
 
   return (
@@ -31,7 +29,7 @@ function App() {
         </div>
 
         <div className='MenuButton'>
-          <Button>Music: On</Button>
+          <MusicButton extraFunc={Song.play} audio = {Song}>Music: On</MusicButton>
         </div>
 
         <div className='MenuButton'>
