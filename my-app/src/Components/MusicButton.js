@@ -15,11 +15,9 @@ export const MusicButton = ({
         if (buttonText == 'Music: On') {
             setButtonText('Music: Off');
             audio.pause()
-            alert('off')
         } else {
             setButtonText('Music: On');
             audio.play()
-            alert('on')
         }
     }
 

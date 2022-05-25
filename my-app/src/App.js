@@ -12,7 +12,7 @@ function clickMe(){
 function App() {
 
   const Song = new Audio(song)
-  
+  Song.play()
 
   return (
     <div className="App">
@@ -29,7 +29,7 @@ function App() {
         </div>
 
         <div className='MenuButton'>
-          <MusicButton extraFunc={Song.play} audio = {Song}>Music: On</MusicButton>
+          <MusicButton audio = {Song}>Music: On</MusicButton>
         </div>
 
         <div className='MenuButton'>
