@@ -28,6 +28,7 @@
     color: #242424;
     transition: all .3s linear;
 }
+
 .btn--primary:hover{
     background-color: #000;
     color: #fff;
